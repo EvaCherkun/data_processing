@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href=/laab2/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:lab2f": "node dist/lab2f/server/server.mjs"
