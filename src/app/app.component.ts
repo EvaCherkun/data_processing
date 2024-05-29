@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Entity } from './interfaces/entity';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +15,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'lab1-2f';
-}
+  entityList: Entity[] = [];
+  service: any;
+
+  getEntities(): void {
+
+    this.service.getEntities().subscribe(
+
+      (entities: Entity[]) => {
+        this.entityList = entities;
+      }
+    )
+  }
+
+  }

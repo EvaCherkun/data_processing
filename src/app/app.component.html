@@ -1,0 +1,9 @@
+<h1>Hello Taylor Swift!</h1>
+<a href="./HelloServlet">HelloServlet</a>
+
+<button (click)="getEntities()">Get entities</button>
+<ul>
+  <li *ngFor="let ent of entityList">
+    Title: {{ent.title}}, age: {{ent.age}}, width: {{ent.width}}
+  </li>
+</ul>
